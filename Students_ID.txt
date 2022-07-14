@@ -1,0 +1,29 @@
+1.
+https://thetestingworldapi.com/api/studentsDetails POST
+
+{
+  "id": 2677913,
+  "first_name": "Maria",
+  "middle_name": "Wioletta",
+  "last_name": "Corleone",
+  "date_of_birth": "18.07.1964"
+}
+
+3. https://thetestingworldapi.com/Api/studentsDetails GET
+4. https://thetestingworldapi.com/api/studentsDetails/{id} PUT
+{
+  "id": 2677913,
+  "first_name": "Maria",
+  "middle_name": "Wioletta",
+  "last_name": "Clemenza",
+  "date_of_birth": "18.07.1964"
+}
+5. https://thetestingworldapi.com/api/studentsDetails/{id} DELETE
+
+{
+  "id": "${#TestSuite#Student_ID}",
+  "first_name": "${#TestSuite#first_name}",
+  "middle_name": "${#TestSuite#middle_name}",
+  "last_name": "${#TestSuite#last_name}",
+  "date_of_birth": "${#TestSuite#date_of_birth}"
+}
